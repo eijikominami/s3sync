@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="HbE-QH-jjP">
+            <objects>
+                <windowController id="HtV-ma-E19" sceneMemberID="viewController">
+                    <window key="window" title="S3Sync" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="p1v-3E-IgL">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="163" y="208" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                    </window>
+                    <connections>
+                        <segue destination="pPf-Hb-1sN" kind="relationship" relationship="window.shadowedContentViewController" id="d1f-1v-raF"/>
+                    </connections>
+                </windowController>
+                <customObject id="uRB-Ak-uDj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2yg-6w-16S">
+            <objects>
+                <viewController id="pPf-Hb-1sN" sceneMemberID="viewController">
+                    <view key="view" id="HaD-9e-iRR">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uqr-OC-JFF">
+                                <rect key="frame" x="176" y="122" width="128" height="128"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MainIcon" id="nfo-DZ-JZr"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iD0-Of-jh1">
+                                <rect key="frame" x="187" y="66" width="107" height="36"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="S3Sync" id="YRM-fk-ZKY">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Mm-OZ4">
+                                <rect key="frame" x="20" y="20" width="440" height="26"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="yAl-By-rcN">
+                                    <rect key="frame" x="0.0" y="0.0" width="440" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" selectable="NO" drawsBackground="NO" importsGraphics="NO" findStyle="panel" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Puz-uH-hrW">
+                                            <rect key="frame" x="0.0" y="0.0" width="440" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="440" height="26"/>
+                                            <size key="maxSize" width="480" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="Default Icon by interactivemania is licensed under a Creative Commons Attribution-No Derivative Works 3.0 .">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="440" height="26"/>
+                                            <size key="maxSize" width="480" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="WZY-B3-gp9">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Jgm-bi-La5">
+                                    <rect key="frame" x="424" y="0.0" width="16" height="26"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="66q-Mm-OZ4" secondAttribute="trailing" constant="20" id="Gib-pW-Zwc"/>
+                            <constraint firstAttribute="bottom" secondItem="66q-Mm-OZ4" secondAttribute="bottom" constant="20" id="Yej-3h-rD4"/>
+                            <constraint firstItem="66q-Mm-OZ4" firstAttribute="leading" secondItem="HaD-9e-iRR" secondAttribute="leading" constant="20" id="Z4L-Gu-JJL"/>
+                            <constraint firstItem="Uqr-OC-JFF" firstAttribute="centerX" secondItem="HaD-9e-iRR" secondAttribute="centerX" id="axG-pT-xuu"/>
+                            <constraint firstItem="Uqr-OC-JFF" firstAttribute="top" secondItem="HaD-9e-iRR" secondAttribute="top" constant="20" id="b3b-Yu-Ohf"/>
+                            <constraint firstItem="iD0-Of-jh1" firstAttribute="top" secondItem="Uqr-OC-JFF" secondAttribute="bottom" constant="20" id="mhC-Vt-57A"/>
+                            <constraint firstItem="iD0-Of-jh1" firstAttribute="centerX" secondItem="HaD-9e-iRR" secondAttribute="centerX" id="vcR-FB-Stk"/>
+                            <constraint firstItem="66q-Mm-OZ4" firstAttribute="top" secondItem="iD0-Of-jh1" secondAttribute="bottom" constant="20" id="xfg-2p-5ad"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="dY7-NL-TmM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="-448"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="koQ-6W-cpo">
+            <objects>
+                <windowController id="t47-JQ-HqS" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="MxU-tR-8A1">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="163" y="208" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                    </window>
+                    <connections>
+                        <segue destination="Shv-4U-dZR" kind="relationship" relationship="window.shadowedContentViewController" id="xQb-1f-lrJ"/>
+                    </connections>
+                </windowController>
+                <customObject id="QKx-7v-rFV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="10"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="Rxn-V2-UeZ">
+            <objects>
+                <viewController id="Shv-4U-dZR" customClass="PreferencesViewController" customModule="S3Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="r07-kf-Hda">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-fb-hXs">
+                                <rect key="frame" x="18" y="233" width="70" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command" id="EQq-2R-qPU">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-XL-7aU">
+                                <rect key="frame" x="106" y="231" width="354" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="nct-8g-5sB">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b30-Ka-hjH">
+                                <rect key="frame" x="359" y="192" width="103" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="FLH-aR-eb7">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="OFF" width="48"/>
+                                        <segment label="ON" width="48" selected="YES" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                            </segmentedControl>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="der-i2-fZf">
+                                <rect key="frame" x="18" y="196" width="229" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sync before machine goes to sleep" id="IsX-3k-jCh">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XhN-q3-1tF">
+                                <rect key="frame" x="18" y="159" width="70" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Log File" id="VHF-fz-xLO">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rwj-JU-3qq">
+                                <rect key="frame" x="313" y="150" width="153" height="32"/>
+                                <buttonCell key="cell" type="push" title="Select Directory ..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wkk-SV-ceA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectLogFileDirectory:" target="Shv-4U-dZR" id="1ix-0S-nYT"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-bw-Jyl">
+                                <rect key="frame" x="104" y="159" width="4" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" usesSingleLineMode="YES" id="I1B-Ll-cPx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rwj-JU-3qq" secondAttribute="trailing" constant="20" id="56e-Y1-BNE"/>
+                            <constraint firstItem="der-i2-fZf" firstAttribute="top" secondItem="Mbh-fb-hXs" secondAttribute="bottom" constant="20" id="8Lh-bN-mCp"/>
+                            <constraint firstItem="XhN-q3-1tF" firstAttribute="width" secondItem="Mbh-fb-hXs" secondAttribute="width" id="8Ls-aC-JOu"/>
+                            <constraint firstItem="rwj-JU-3qq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="G9M-bw-Jyl" secondAttribute="trailing" constant="5" id="9V3-gY-LRc"/>
+                            <constraint firstAttribute="trailing" secondItem="b30-Ka-hjH" secondAttribute="trailing" constant="20" id="9fi-Dn-mbo"/>
+                            <constraint firstItem="Mbh-fb-hXs" firstAttribute="leading" secondItem="r07-kf-Hda" secondAttribute="leading" constant="20" id="ICB-E6-Zw1"/>
+                            <constraint firstItem="qqb-XL-7aU" firstAttribute="centerY" secondItem="Mbh-fb-hXs" secondAttribute="centerY" id="Oqe-a8-t10"/>
+                            <constraint firstAttribute="trailing" secondItem="qqb-XL-7aU" secondAttribute="trailing" constant="20" id="PEf-IU-K5I"/>
+                            <constraint firstItem="qqb-XL-7aU" firstAttribute="leading" secondItem="Mbh-fb-hXs" secondAttribute="trailing" constant="20" id="XV3-5M-gsB"/>
+                            <constraint firstItem="b30-Ka-hjH" firstAttribute="centerY" secondItem="der-i2-fZf" secondAttribute="centerY" id="gFW-OK-I9L"/>
+                            <constraint firstItem="rwj-JU-3qq" firstAttribute="top" secondItem="b30-Ka-hjH" secondAttribute="bottom" constant="16" id="gu7-0h-Ani"/>
+                            <constraint firstItem="rwj-JU-3qq" firstAttribute="centerY" secondItem="XhN-q3-1tF" secondAttribute="centerY" id="mDK-cf-GeF"/>
+                            <constraint firstItem="G9M-bw-Jyl" firstAttribute="leading" secondItem="qqb-XL-7aU" secondAttribute="leading" id="s83-1l-gOe"/>
+                            <constraint firstItem="der-i2-fZf" firstAttribute="leading" secondItem="Mbh-fb-hXs" secondAttribute="leading" id="tw9-pa-KFu"/>
+                            <constraint firstItem="XhN-q3-1tF" firstAttribute="leading" secondItem="r07-kf-Hda" secondAttribute="leading" constant="20" id="uL1-Jx-ere"/>
+                            <constraint firstItem="G9M-bw-Jyl" firstAttribute="centerY" secondItem="XhN-q3-1tF" secondAttribute="centerY" id="ymy-oX-YDj"/>
+                            <constraint firstItem="Mbh-fb-hXs" firstAttribute="top" secondItem="r07-kf-Hda" secondAttribute="top" constant="20" id="z3C-xa-Hkz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logDirectoryLabel" destination="G9M-bw-Jyl" id="FKC-ij-wuK"/>
+                        <outlet property="segmentedControl" destination="b30-Ka-hjH" id="qwp-CD-MPt"/>
+                        <outlet property="textField" destination="qqb-XL-7aU" id="i5c-Cy-PHA"/>
+                    </connections>
+                </viewController>
+                <customObject id="cvC-5g-i7H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173" y="2"/>
+        </scene>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <menu id="ecb-fL-SNM">
+                    <items>
+                        <menuItem title="About S3Sync" id="NBD-G4-dST">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <segue destination="HtV-ma-E19" kind="show" id="fOa-j4-BoW"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="1lN-PS-38u"/>
+                        <menuItem title="Sync" keyEquivalent="s" id="cqm-Dq-au5">
+                            <connections>
+                                <action selector="sync:" target="Voe-Tx-rLC" id="g0J-Ke-nKj"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Stop" keyEquivalent="." id="P6m-We-GiQ">
+                            <connections>
+                                <action selector="stop:" target="Voe-Tx-rLC" id="oUZ-pN-RzQ"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Preferences" keyEquivalent="," id="iR3-61-U9S">
+                            <connections>
+                                <segue destination="t47-JQ-HqS" kind="show" id="K9P-i3-raE"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Quit" keyEquivalent="q" id="clH-xb-ohZ">
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="fee-5d-i7o"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="S3Sync" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menu" destination="ecb-fL-SNM" id="Pwn-i5-eQY"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="S3Sync" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="S3Sync" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="Quit S3Sync" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="cmU-th-v3C"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Edit" id="a3M-T0-raI">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="uVN-i0-PBp">
+                                    <items>
+                                        <menuItem title="Undo" keyEquivalent="z" id="Odo-oo-pYE">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="1E0-sn-NkL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="RAQ-dR-NgK">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="f3a-4P-DiO"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="vas-3b-wed"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="4TE-Qg-Hhd">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="zQY-kU-Nrg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="St2-Gk-oon">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="pE9-rg-8i8"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="gef-ms-xJR">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="xTm-pa-0jR"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste and Match Style" keyEquivalent="V" id="evu-8e-y5a">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="pasteAsPlainText:" target="Ady-hI-5gd" id="sBi-Sz-GQX"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Select All" keyEquivalent="a" id="Sfe-4j-e5g">
+                                            <connections>
+                                                <action selector="selectAll:" target="Ady-hI-5gd" id="icO-so-7CF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Ezz-cz-11e">
+            <objects>
+                <controllerPlaceholder id="uQb-A5-FUB" sceneMemberID="viewController"/>
+                <customObject id="H6l-vd-1N1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainIcon" width="128" height="128"/>
+    </resources>
+</document>

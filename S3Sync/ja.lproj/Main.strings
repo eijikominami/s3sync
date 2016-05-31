@@ -1,0 +1,36 @@
+
+/* Class = "NSMenuItem"; title = "S3Sync"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "S3Sync";
+
+/* Class = "NSMenuItem"; title = "Quit S3Sync"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit S3Sync";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTextFieldCell"; title = "Command"; ObjectID = "EQq-2R-qPU"; */
+"EQq-2R-qPU.title" = "Command";
+
+/* Class = "NSSegmentedCell"; FLH-aR-eb7.ibShadowedLabels[0] = "OFF"; ObjectID = "FLH-aR-eb7"; */
+"FLH-aR-eb7.ibShadowedLabels[0]" = "OFF";
+
+/* Class = "NSSegmentedCell"; FLH-aR-eb7.ibShadowedLabels[1] = "ON"; ObjectID = "FLH-aR-eb7"; */
+"FLH-aR-eb7.ibShadowedLabels[1]" = "ON";
+
+/* Class = "NSTextFieldCell"; title = "Sync before machine goes to sleep"; ObjectID = "IsX-3k-jCh"; */
+"IsX-3k-jCh.title" = "Sync before machine goes to sleep";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "MxU-tR-8A1"; */
+"MxU-tR-8A1.title" = "Preferences";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "clH-xb-ohZ"; */
+"clH-xb-ohZ.title" = "Quit";
+
+/* Class = "NSMenuItem"; title = "Sync"; ObjectID = "cqm-Dq-au5"; */
+"cqm-Dq-au5.title" = "Sync";
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "iR3-61-U9S"; */
+"iR3-61-U9S.title" = "Preferences";
+
+/* Class = "NSMenu"; title = "S3Sync"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "S3Sync";
